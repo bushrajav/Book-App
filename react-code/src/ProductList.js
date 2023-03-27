@@ -7,7 +7,7 @@ function ProductList() {
 
   useEffect(() => {
     axios
-      .get("/products")
+      .get("http://localhost:8080/books")
       .then((response) => {
         setProducts(response.data);
       })
