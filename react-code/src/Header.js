@@ -1,11 +1,17 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 // import SearchIcon from "@material-ui/icons/Search";
 // import { Search, SportsBasketball } from "@material-ui/icons";
 // import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import "./Home";
 import { useEffect, useState } from "react";
+=======
+//import SearchIcon from "@material-ui/icons/Search";
+//import { Search, SportsBasketball } from "@material-ui/icons";
+//import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+>>>>>>> f25adbcc22e3f3c39c40b7c2617ea325442d94d9
 
 function Header() {
   // const [searchTerm, setSearchTerm] = useState("");
@@ -23,6 +29,7 @@ function Header() {
 
       {/* searcharea */}
       <div className="header__search">
+<<<<<<< HEAD
         <input
           type="text"
           className="header__searchInput"
@@ -32,6 +39,10 @@ function Header() {
           // }}
         ></input>
         {/* <SearchIcon className="header__searchIcon"></SearchIcon> */}
+=======
+        <input type="text" className="header__searchInput"></input>
+//        <SearchIcon className="header__searchIcon"></SearchIcon>
+>>>>>>> f25adbcc22e3f3c39c40b7c2617ea325442d94d9
       </div>
 
       {/* 3 links */}
@@ -59,11 +70,17 @@ function Header() {
         </Link>
         {/* Link4 */}
         <Link to="/checkout" className="header__link">
+<<<<<<< HEAD
           {/* <div className="header__optionBasket"> */}
           <div className="header__option">
             <span className="header__optionLineOne">Your</span>
             <span className="header__optionLineTwo">Basket</span>
             {/* <ShoppingBasketIcon></ShoppingBasketIcon> */}
+=======
+          <div className="header__optionBasket">
+            {/* book basket icon */}
+//            <ShoppingBasketIcon></ShoppingBasketIcon>
+>>>>>>> f25adbcc22e3f3c39c40b7c2617ea325442d94d9
             {/* num of books */}
             <span className="header__optionLineTwo header__basketCount">
               {/* {basket.length} */}

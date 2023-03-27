@@ -1,7 +1,11 @@
 import React from "react";
 import Product from "./Product";
 import "./Home.css";
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
+=======
+import ProductList from "./ProductList";
+>>>>>>> f25adbcc22e3f3c39c40b7c2617ea325442d94d9
 
 function Home() {
   const [showBooks, setshowBooks] = useState();
@@ -43,7 +47,17 @@ function Home() {
         alt=""
       ></img>
 
+<<<<<<< HEAD
       <div className="home__row">{showBooks}</div>
+=======
+      {/* Product with name, id, title, price, image */}
+      {/* FETCH API HERE TO REPLACE DETAILS */}
+      <div className="home__row">
+       <ProductList />
+      </div>
+
+      {/* Product */}
+>>>>>>> f25adbcc22e3f3c39c40b7c2617ea325442d94d9
     </div>
   );
 }
