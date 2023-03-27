@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
-import { Search } from "@material-ui/icons";
+import { Search, SportsBasketball } from "@material-ui/icons";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 
 function Header() {
@@ -52,7 +52,9 @@ function Header() {
             {/* book basket icon */}
             <ShoppingBasketIcon></ShoppingBasketIcon>
             {/* num of books */}
-            <span className="header__optionLineTwo header__basketCount">0</span>
+            <span className="header__optionLineTwo header__basketCount">
+              {/* {basket.length} */}
+            </span>
           </div>
         </Link>
       </div>
