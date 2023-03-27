@@ -21,7 +21,7 @@ function Home() {
           rating={5}
           image="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51QVWt8ECCL._SX218_BO1,204,203,200_QL40_ML2_.jpg"
         />
-        <Product
+        {/* <Product
           id="13243543"
           title="Codeverse Book"
           price={15.0}
@@ -57,7 +57,7 @@ function Home() {
           price={15.0}
           rating={5}
           image="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51QVWt8ECCL._SX218_BO1,204,203,200_QL40_ML2_.jpg"
-        />
+        /> */}
       </div>
 
       {/* Product */}
