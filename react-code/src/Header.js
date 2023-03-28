@@ -1,11 +1,11 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-//import SearchIcon from "@material-ui/icons/Search";
-//import { Search, SportsBasketball } from "@material-ui/icons";
-//import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import { useEffect, useState } from "react";
 
 function Header() {
+  // const [searchTerm, setSearchTerm] = useState("");
+
   return (
     <nav className="header">
       {/* logo/img */}
@@ -19,7 +19,18 @@ function Header() {
 
       {/* searcharea */}
       <div className="header__search">
+<<<<<<< HEAD
         <input type="text" className="header__searchInput"></input>
+=======
+        <input
+          type="text"
+          className="header__searchInput"
+          placeholder="Search..."
+          // onChange={(event) => {
+          //   event.target.value;
+          // }}
+        ></input>
+>>>>>>> e40985ed37f734d28f40092be2c6d889191300e3
       </div>
 
       {/* 3 links */}
@@ -47,8 +58,17 @@ function Header() {
         </Link>
         {/* Link4 */}
         <Link to="/checkout" className="header__link">
+<<<<<<< HEAD
           <div className="header__optionBasket">
             {/* book basket icon */}
+=======
+          {/* <div className="header__optionBasket"> */}
+          <div className="header__option">
+            <span className="header__optionLineOne">Your</span>
+            <span className="header__optionLineTwo">Basket</span>
+            {/* <ShoppingBasketIcon></ShoppingBasketIcon> */}
+
+>>>>>>> e40985ed37f734d28f40092be2c6d889191300e3
             {/* num of books */}
             <span className="header__optionLineTwo header__basketCount">
               {/* {basket.length} */}

@@ -8,8 +8,10 @@
 .home__row {
   display: flex;
   justify-content: center;
-  z-index: 1;
-  margin: 0 5px;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  margin: 0px 10px;
 }
 
 .home__image {
@@ -19,4 +21,15 @@
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   z-index: -1;
   /* margin-bottom: -80px; */
+}
+
+.main__text {
+  font-size: 4em;
+  text-transform: uppercase;
+  margin-bottom: -150px;
+  color: white;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  font-weight: 800;
 }
