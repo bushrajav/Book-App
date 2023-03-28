@@ -20,7 +20,6 @@ function Header() {
       {/* searcharea */}
       <div className="header__search">
         <input type="text" className="header__searchInput"></input>
-//        <SearchIcon className="header__searchIcon"></SearchIcon>
       </div>
 
       {/* 3 links */}
@@ -50,7 +49,6 @@ function Header() {
         <Link to="/checkout" className="header__link">
           <div className="header__optionBasket">
             {/* book basket icon */}
-//            <ShoppingBasketIcon></ShoppingBasketIcon>
             {/* num of books */}
             <span className="header__optionLineTwo header__basketCount">
               {/* {basket.length} */}

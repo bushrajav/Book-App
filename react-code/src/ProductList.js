@@ -20,11 +20,9 @@ function ProductList() {
     <div className="productList">
       {products.map((product) => (
         <Product
-          key={product.id}
           id={product.id}
           title={product.title}
           price={product.price}
-          rating={product.rating}
           image={product.image}
         />
       ))}
