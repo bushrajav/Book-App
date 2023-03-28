@@ -10,6 +10,7 @@ function Product({ id, title, price, image }) {
           <small>£</small>
           <strong>{price}</strong>
         </p>
+
         {/* <div className="product__rating">
           {Array(rating)
             .fill()

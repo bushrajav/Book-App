@@ -19,6 +19,7 @@ function Header() {
 
       {/* searcharea */}
       <div className="header__search">
+        <input type="text" className="header__searchInput"></input>
         <input
           type="text"
           className="header__searchInput"
@@ -54,6 +55,8 @@ function Header() {
         </Link>
         {/* Link4 */}
         <Link to="/checkout" className="header__link">
+          <div className="header__optionBasket">
+            {/* book basket icon */}
           {/* <div className="header__optionBasket"> */}
           <div className="header__option">
             <span className="header__optionLineOne">Your</span>
@@ -65,6 +68,8 @@ function Header() {
               {/* {basket.length} */}
             </span>
           </div>
+                  </div>
+
         </Link>
       </div>
       {/* basket icon with number */}
