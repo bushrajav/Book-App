@@ -11,10 +11,7 @@ public class MyRESTController {
 
     @Autowired
     BookRepository repository;
-<<<<<<< HEAD
 
-=======
->>>>>>> f25adbcc22e3f3c39c40b7c2617ea325442d94d9
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/books")
     public Iterable<Book> getBooks() {
