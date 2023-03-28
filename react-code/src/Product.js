@@ -10,9 +10,7 @@ function Product({ id, title, price, image }) {
           <small>£</small>
           <strong>{price}</strong>
         </p>
-<<<<<<< HEAD
 
-=======
         {/* <div className="product__rating">
           {Array(rating)
             .fill()
@@ -20,7 +18,6 @@ function Product({ id, title, price, image }) {
               <p>⭐</p>
             ))}
         </div> */}
->>>>>>> e40985ed37f734d28f40092be2c6d889191300e3
       </div>
       <img src={image} alt=""></img>
       <button>Add to basket</button>
