@@ -60,10 +60,18 @@
 .login__registerButton {
   /* background-color: rgb(15, 120, 15); */
   border: 1px solid;
+  background-color: white;
+
   color: rgb(92, 92, 92);
   border-radius: 20px;
   padding: 12px 20px;
   font-weight: 800;
   font-size: 1em;
   margin: 10px 0 20px 0;
+
+  display: flex;
+  text-align: center;
+}
+link {
+  color: green;
 }

@@ -1,19 +1,16 @@
 import React from "react";
-import "./Login.css";
+// import "./Signup.css";
 import { Link, useHistory } from "react-router-dom";
 import { useState } from "react";
 import { useLocalState } from "./useLocalStorage";
-import SignUp from "./SignUp";
 
-function Login() {
+function Signup() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [jwt, setJwt] = useLocalState("", "jwt");
   const history = useHistory();
-  const api = "/api/auth/signin";
-  const sendLoginRequest = () => {
-    // console.log("I am sending login request");
-
+  const api = "/api/auth/signup";
+  const sendSignupRequest = () => {
     const reqBody = {
       username,
       password,
@@ -34,17 +31,17 @@ function Login() {
   };
 
   return (
-    <div className="login">
+    <div className="signup">
       <Link to="/">
         <img
-          className="login__logo"
+          className="signup__logo"
           src="https://thumbs.dreamstime.com/b/green-tree-logo-design-simple-vector-tree-icon-green-tree-logo-design-white-background-124365698.jpg"
           alt=""
         ></img>
       </Link>
 
-      <div className="login__container">
-        <h1>Sign In</h1>
+      <div className="signup__container">
+        <h1>Create Account</h1>
         <form>
           <h4>Email</h4>
           <input
@@ -61,21 +58,18 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
           ></input>
           <button
-            className="login__signInButton"
+            className="signup__createButton"
             type="button"
-            onClick={(e) => sendLoginRequest()}
+            onClick={(e) => sendSignupRequest()}
           >
-            Sign In
+            Create Account
           </button>
           <p>Agree to Codeverse Terms and Conditions</p>
-          {/* <button className="login__registerButton">Create Account</button> */}
-          <Link to="/SignUp" className="login__registerButton">
-            Create Account
-          </Link>
+          <button className="signup__loginButton">Sign In</button>
         </form>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default Signup;
