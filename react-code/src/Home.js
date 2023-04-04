@@ -27,6 +27,8 @@ function Home() {
       ></img>
       <Search results={books} setFilteredResults={setFilteredBooks} />
       <div className="home__row">
+        <Product key="1" title="title" price="2.00" image=""></Product>
+        <Product key="2" title="titl2" price="2.00" image=""></Product>
         {filteredBooks.map((book) => (
           <Product
             key={book.id}

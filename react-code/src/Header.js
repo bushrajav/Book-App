@@ -3,8 +3,12 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Search from "./Search";
+import { useStateValue } from "./StateProvider";
 
 function Header({ results }) {
+  const [{ basket }] = useStateValue();
+  console.log(basket);
+
   return (
     <nav className="header">
       {/* logo/img */}
@@ -54,13 +58,13 @@ function Header({ results }) {
             {/* book basket icon */}
             {/* <div className="header__optionBasket"> */}
             <div className="header__option">
-              <span className="header__optionLineOne">Your</span>
-              <span className="header__optionLineTwo">Basket</span>
+              <span className="header__optionLineOne">Basket</span>
+              <span className="header__optionLineTwo"></span>
               {/* <ShoppingBasketIcon></ShoppingBasketIcon> */}
 
               {/* num of books */}
               <span className="header__optionLineTwo header__basketCount">
-                {/* {basket.length} */}
+                {basket?.length}
               </span>
             </div>
           </div>
