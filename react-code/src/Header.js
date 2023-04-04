@@ -21,7 +21,7 @@ function Header({ results }) {
         {/* <input
           type="text"
           className="header__searchInput"
-          placeholder="Search..."
+          placeholder="Search book with book title"
         ></input> */}
       </div>
 

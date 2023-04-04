@@ -51,6 +51,13 @@ public class BookApplication {
         repository.save(new Book(10, "Atomic Habits", "the life-changing million-copy #1 bestseller", "James Clear", LocalDate.of(2018, 10, 18),
                 20.50, "HARDCOVER", "English", "1847941834", 320, "Random house Business", "https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg"));
 
+        repository.save(new Book(11, "Lessons in Chemistry", "The No. 1 Sunday Times bestseller and BBC Between the Covers Book Club pick", "Bonnie Garmus", LocalDate.of(2023, 3, 2),
+                4.99, "Paperback", "English", "1804990922", 400, "Penguin", "https://m.media-amazon.com/images/I/41TI5SQSUVL._SX309_BO1,204,203,200_.jpg"));
+
+        repository.save(new Book(12, "The Dinosaur that Pooped Easter! ", " ", "JDougie Poynter", LocalDate.of(2021, 12, 3),
+                4.99, "Paperback", "English", "0241488818", 26, "Puffin", "https://m.media-amazon.com/images/I/61NAcdvnooL._SY498_BO1,204,203,200_.jpg"));
+
+
         List<Role> roles = new ArrayList<>();
 
         Role roleUser = new Role(ERole.ROLE_USER);

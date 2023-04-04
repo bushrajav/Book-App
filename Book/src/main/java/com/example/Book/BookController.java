@@ -13,17 +13,17 @@ import java.util.List;
 public class BookController {
 
     @Autowired
-    BookRepository repository;
-
+    BookRepository bookRepository;
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/books")
     public Iterable<Book> getBooks() {
-        return repository.findAll();
+        return bookRepository.findAll();
     }
 
     @GetMapping("/search")
     public List<Book> getSearch(@RequestParam String title) {
-        return repository.findByTitle(title);
+        return bookRepository.findByTitle(title);
     }
+
 
 }
