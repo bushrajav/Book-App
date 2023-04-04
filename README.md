@@ -1,12 +1,17 @@
-#Book-App
-FUNCTIONALITY STILL TO BE IMPLEMENTED/FIXED AT CLIENT SIDE FOR A USER:
-i- Login
-ii- Register
-iii- Logout
+#Book-App  
 
-WORKING FUNCTIONALITY:
-i- Renders all books from the database
-ii- Search the book by book title.
+FUNCTIONALITY STILL TO BE IMPLEMENTED/FIXED AT CLIENT SIDE FOR A USER:  
+
+i- Login  
+ii- Register  
+iii- Logout  
+iv- Cart Add/Delete   
+
+WORKING FUNCTIONALITY:  
+
+i- Renders all books from the database  
+ii- Search the book by book title.  
+
 Steps:
 
 1. Create a database in postgresql.
@@ -15,16 +20,18 @@ Steps:
 
 
 3. In application.properties file set the following Environment variables to connect to the PostgreSQL database.
-
+```
 URL = jdbc:postgresql://localhost:5432/yourdatabase
 USERNAME = your_user_name
 PASSWORD= your_password
-
+```
 4. Run the main method in BookApplication.java file.
 5. In you terminal cd to react-code folder.
 6. These are couple of commands to run react
-   i- npm run build
-   ii- npm start
+```
+    npm run build
+    npm start
+   ```
 7. The http://localhost:3000 will open up and show the list of books.
 8. Search the book by book title in the search box.
 
